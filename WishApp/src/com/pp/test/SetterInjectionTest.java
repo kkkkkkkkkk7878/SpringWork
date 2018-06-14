@@ -17,6 +17,7 @@ public class SetterInjectionTest {
 		//create IOC Container (BeanFactory)
         factory=new XmlBeanFactory(res);
       wish=(WishMessageGenerator)factory.getBean("wish");
+      System.out.println("-----------------------------------------------");
      System.out.println("Wish Message : "+wish.generateWishMessage("Ram")); 
 	}
 
